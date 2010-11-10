@@ -41,7 +41,6 @@
 				<inherited>true</inherited>
         		<configuration>
           			<forkMode>once</forkMode>
-          			<classesDirectory>${test.classes.dir}</classesDirectory>    
 					<excludes>
 						<exclude>**/*IntegrationTest.java</exclude>
 						<exclude>**/common/*</exclude>
@@ -59,9 +58,6 @@
 		-->
 		<profile>
 			<id>with-emma</id>
-			<properties>
-				<test.classes.dir>${project.build.directory}/generated-classes/emma/classes</test.classes.dir>
-			</properties>
 			<build>
 				<plugins>
 					<plugin>
